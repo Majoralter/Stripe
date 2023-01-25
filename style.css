@@ -98,6 +98,14 @@ nav a:hover{
     gap: 30px;
 }
 
+button{
+    cursor: pointer;
+}
+
+a{
+    cursor: default;
+}
+
 .sign-in-btn{
     display: flex;
     justify-content: center;
@@ -119,7 +127,6 @@ nav a:hover{
     height: 38vh;
     display: flex;
     flex-direction: row;
-    position: relative;
 }
 
 .hero-section-text{
@@ -190,4 +197,148 @@ nav a:hover{
     z-index: 2;
     margin-top: -90px;
     right: 50;
+}
+
+
+.section-one{
+    padding: 0px 250px;
+    margin-top: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 100vw;
+}
+
+.logo-row-one,.logo-row-two{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+
+.section-two{
+    position: relative;
+    z-index: 0;
+    padding: 150px 250px;
+    margin-top: 100px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 30px;
+    background-color: hsl(205, 100%, 52%, .05);
+}
+
+.small-heading{
+    font-weight: bolder;
+    font-size: var(--body);
+    color: var(--light-purplish-blue);
+}
+
+.heading{
+    font-size: var(--section-heading);
+    color: var(--deep-blue);
+}
+
+.description{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.description p{
+    font-weight: 500;
+    font-size: var(--body);
+    color: rgb(65, 65, 65);
+    line-height: 28px;
+}
+
+.description p>a{
+    text-decoration: none;
+    color: var(--light-purplish-blue);
+}
+
+.section-two-cta{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    border: none;
+    border-radius: var(--btn-border-radius);
+    padding: 5px 15px;
+    font-weight: bold;
+    background-color: var(--light-purplish-blue);
+    color: white;
+    font-size: var(--navigation);
+}
+
+.section-two-images-one{
+    display: flex;
+    flex-direction: row;
+}
+
+.netly-card{
+    height: 300px;
+    width: auto;
+    animation: netly .6s linear infinite alternate;
+}
+
+@keyframes netly{
+    0%{
+        scale: .9;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+.pos{
+    height: 500px;
+    width: auto;
+    animation: pos .5s linear infinite alternate;
+}
+
+@keyframes pos{
+    0%{
+        transform: rotate(2deg);
+    }
+
+    100%{
+        transform: rotate(-2deg);
+    }
+}
+
+.section-two-images-two{
+    display: flex;
+    flex-direction: row;
+}
+
+.phone-mockup-1 {
+    height: 650px;
+    width: auto;
+    margin-top: -250px;
+}
+
+.rocketeer-dashboard-1 {
+    height: 400px;
+    width: auto;
+}
+
+.section-three{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 3;
+    background-color: #0C2E4E;
+    height: fit-content;
+    width: 100vw;
+    padding: 150px 250px;
+    margin-top: -200px;
+    position: absolute;
+    transform: skewY(-12deg);
+}
+
+.section-three>div{
+    transform: skewY(12deg);
 }
