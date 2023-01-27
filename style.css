@@ -328,6 +328,7 @@ a{
 .section-three{
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     z-index: 3;
     background-color: #0C2E4E;
@@ -336,9 +337,105 @@ a{
     padding: 150px 250px;
     margin-top: -200px;
     position: absolute;
-    transform: skewY(-12deg);
+    transform: skewY(-7deg);
 }
 
-.section-three>div{
-    transform: skewY(12deg);
+.section-three-content{
+    display: flex;
+    flex-direction: column;
+    transform: skewY(7deg);
+    gap: 25px;
 }
+
+.small-heading-2{
+    font-weight: bolder;
+    font-size: var(--body);
+    color: var(--light-cyan);
+}
+
+.section-three h1{
+    font-size: var(--section-heading);
+    color: var(--white);
+}
+
+.section-content{
+    color: var(--white);
+    line-height: 30px;
+    font-weight: lighter;
+}
+
+.section-three button{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    border: none;
+    border-radius: var(--btn-border-radius);
+    padding: 5px 15px;
+    font-weight: bold;
+    width: fit-content;
+    background-color: var(--light-cyan);
+    color: #0C2E4E;
+    font-size: var(--navigation);
+}
+
+.ide{
+    transform: skewY(7deg);
+    height: 647px;
+    width: auto;
+    margin-top: 100px;
+    animation: ide ease-in-out 1s infinite alternate;
+}
+
+@keyframes ide{
+    0%{
+        opacity: .5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.small-content{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.small-content img{
+    height: 52px;
+}
+
+.small-content span{
+    color: var(--light-cyan);
+}
+
+.small-content-one,.small-content-two{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.small-content-one p:nth-child(2),.small-content-two p:nth-child(2) {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.small-content-one p:nth-child(3),.small-content-two p:nth-child(3) {
+    color: rgb(214, 214, 214);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.small-content button {
+    color: var(--light-cyan);
+    background: none;
+    border: none;
+    padding: 0;
+    align-items: flex-start;
+}
+
+
